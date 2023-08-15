@@ -32,8 +32,8 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
         elif args[0] not in HBNBCommand.__model_list:
             print("** class doesn't exist **")
-        elif len(args) == 1:
-            print("** instance id missing **")
+        # elif len(args) == 1:
+            # print("** instance id missing **")
         else:
             new_instance = eval(args[0])(*args[1:])
             new_instance.save()
