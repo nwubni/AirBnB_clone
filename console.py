@@ -16,7 +16,7 @@ from models.review import Review
 
 class HBNBCommand(cmd.Cmd):
     """
-    class HBNBCommand that inherits from cmd.Cmd
+    class HBNBCommand inherits from cmd.Cmd
     """
     prompt = "(hbnb) "
     __model_list = ["BaseModel", "User",
